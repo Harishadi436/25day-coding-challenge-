@@ -1,0 +1,43 @@
+/*
+#day1
+Write a program which takes the coordinates of a point (x,y) and check in which quadrant number lines
+	a)i/p-->take x,y as user input
+	b)Logic,
+	    .both x&y position--> First Quadrent
+	    .x negative & y positive --> Second Quadrent
+	    .x negative & y negative -->Third Quadrent
+	    .x positive & y negative -->Fourth Quadrent
+	    .x&y both 0--> Orgine
+	c)eg
+	    i/p:x=10,y=-5,
+	    o/p:Point with coordinate(10,-5) is at fourth Quadret.*/
+
+package com.java_coding;
+import java.util.Scanner;
+public class Graph {
+	        public static void main(String [] args){
+	            Scanner scr=new Scanner(System.in);
+	            System.out.println("Enter the co-ordinates");
+	            System.out.println("x:");
+	            int x=scr.nextInt();
+	            System.out.println("y:");
+	            int y=scr.nextInt();
+	            if(x==0 && y==0) {
+	            	System.out.println("Orgine");
+	            }
+	            else if(x>=0 && y>=0) {
+	            	System.out.println("First Quadrent");
+	            }
+	            else if(x<=0 && y>=0) {
+	            	System.out.println("Second Quadrent");
+	            }
+	            else if(x<=0 && y<=0) {
+	            	System.out.println("Third Quadrent");
+	            }
+	            else {
+	            	System.out.println("Fourth Quadrent");
+	            }
+	        }
+	    }
+
+
