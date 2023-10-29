@@ -1,0 +1,32 @@
+/*Write a java code to Get result of student by using input from user and Dispatch the reult as pass if parcentage is more than 35 else show Fail*/
+package com.java_coding;
+import java.util.Scanner;
+public class Result {
+
+	public static void main(String[] args) {
+		Scanner scr = new Scanner(System.in);
+		System.out.println("Hello Plese enter your marks subject wise to get your Results \nALL THE BEST");
+		System.out.println("Subject 1 :");
+		int subject1 = scr.nextInt();
+		System.out.println("Subject 2 :");
+		int subject2 = scr.nextInt();
+		System.out.println("Subject 3 :");
+		int subject3 = scr.nextInt();
+		System.out.println("Subject 4 :");
+		int subject4 = scr.nextInt();
+		System.out.println("Subject 5 :");
+		int subject5 = scr.nextInt();
+		System.out.println("Subject 6 :");
+		int subject6 = scr.nextInt();
+		int total_Makrs = subject1 + subject2 + subject3 + subject4 + subject5 + subject6 ;
+		float parcent = (total_Makrs/6 ) ;
+		
+		if(parcent>=35) {
+			System.out.println("Congragulations your percentage is "+ parcent + "% you are PASS");
+		}else {
+			System.out.println("your parcentage is "+ parcent + "% you are FAIL");
+		}
+		
+	}
+
+}
