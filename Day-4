@@ -1,0 +1,23 @@
+package com.mock;
+import java.util.Scanner;
+public class palendromicnumber {
+public static void main(String[] args) {
+    String r ="";
+	Scanner sc=new Scanner(System.in);
+	System.out.println("Enter number =");
+	String o=sc.nextLine();
+	
+	
+	
+	for(int i=o.length()-1;i>=0;i--) {
+     r=r+o.charAt(i);		
+	}
+	if(r.equals(o)) {
+		System.out.println(o+" its plandrom");
+	}
+	else {
+		System.out.println(o+" not a plandrom");
+	}
+	
+}
+}
