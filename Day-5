@@ -1,0 +1,75 @@
+package com.java_coding;
+
+public class Pattern 
+{
+	public static void main(String[] args) 
+	{
+		int i;
+		int j;
+		int n=5;
+		int count = 1; 
+		System.out.println("Square pattern no;1");
+		for(j = 1 ;j<=n;j++)
+		{
+			for(i = 1 ; i<=n ; i++) 
+			{
+				System.out.print("*"+" ");
+			}
+				System.out.println();
+		}
+		System.out.println("Square pattern no;2");
+		for(j = 1 ;j<=n ; j++)
+		{
+			for(i = 1;i<=n ;i++)
+			{
+				System.out.print(i+" ");
+			}
+				System.out.println();
+		}
+		System.out.println("Square pattern no;3");
+		for(j = 1 ;j<=n ; j++)
+		{
+			for(i = 1;i<=n ;i++)
+			{
+				System.out.print(j+" ");
+			}
+				System.out.println();
+		}
+		System.out.println("Square pattern no;4");
+		for(j = 1 ;j<=n ; j++)
+		{
+			for(i = 1;i<=n ;i++)
+			{
+				if(count<10) {
+					System.out.print(0);
+				}
+				System.out.print(count+" ");
+				count++;
+			}
+				System.out.println();
+		}
+		System.out.println("Square pattern no;5");
+		for(j = 1 ;j<=n ; j++)
+		{
+			for(i = 1;i<=n ;i++)
+			{
+				if(i*j<10) {
+					System.out.print(0);
+				}
+				System.out.print(i*j+" ");
+			}
+				System.out.println();
+		}
+		System.out.println("Square pattern no;6");
+		for( j = 1;j<=n ; j++)
+		{
+			for( i = 1;i<=n ;i++)
+			{
+				if(j==1 ||j==n ||i==1 ||i==n)
+				{
+					System.out.print("*"+" ");
+				}
+			}System.out.println();
+		}
+	}
+}
